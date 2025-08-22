@@ -1,8 +1,26 @@
-# React + Vite
+# Xpense Tracker Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and intuitive **expense tracking web application** built with React and hosted on Netlify.  
+Track your daily income and expenses, view your balance, and manage your transactions with ease.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Add income & expense transactions  
+- View real-time balance updates  
+- Transaction history tracking  
+- Clean and responsive UI  
+- Deployed on Netlify  
+
+---
+
+## Tech Stack
+- Frontend: React, JavaScript, CSS (or Tailwind if used)  
+- Hosting:Netlify  
+
+---
+
+## screenshots
+<img width="1280" height="800" alt="Screenshot 2025-08-22 131737" src="https://github.com/user-attachments/assets/e35a1010-8f4e-4fba-a962-fac540bcd487" />
+
+
