@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+.app{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size:30px;
+    font-weight: 500;
+    margin: 10px auto;
+    text-align: center;
+}
+.Balance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px ;
+    gap: 20px;
+}
+.Balance h4{
+    font-size: 25px;
+}
+.expense{
+    width: 100%;
+    position: relative;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin:10px auto ;
+    padding: 10px;
+}
+.expense div{
+    flex-basis: 50%;
+    justify-items: center;
+}
+.expense h2{
+    font-size: 22px;
+}
+.expense div:first-child::after{
+    content: "";
+    width: 2px;
+    text-align: center;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    top: 8px;
+}
+.expense div:first-child p{
+    color: green;
+    font-weight: 600;
+}
+.expense div:last-child p{
+    color: red;
+    font-weight: 600;
+}
+.Transactions{
+    flex-grow: 1;
+}
+.Transactions div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items:flex-start;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+.Transactions h3::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(248, 241, 241);
+    left: 0px;
+    top: 30px;
+    margin: 5px auto;
+}
+.Transactions ul{
+    width: 100%;
+}
+.Transactions ul li{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(221, 230, 230);
+    padding: 15px;
+    margin: 8px 0;
+    box-shadow: black 3px 3px 1px;
+}
+.Transactions button{
+    position: absolute;
+    left: -20px;
+    background-color:white;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 0;
+}
+.Transactions button:hover{
+    background-color: red;
+    color: white;
+    opacity: 1;
+    transition: 0.5s ease-in;
+}
+.add{
+    position: relative;
+    width: 100%;
+}
+.add h3::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(248, 241, 241);
+    left: 0px;
+    top: 30px;
+    margin: 5px auto;
+}
+.add {
+    max-width: 600px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+form div{
+margin: 10px 0;
+}
+form div label{
+    font-weight: bold;
+}
+form div input{
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    height: 30px;
+}
+form button{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px;
+}
+@media (max-width:425px) {
+    h2 {
+        font-size:20px;
+        margin: 5px 0;
+    }
+    .Balance h4 {
+        font-size: 17px;
+    }
+    .Balance h1{
+        font-size: 20px;
+    }
+    .expense {
+        margin: 5px auto;
+        padding: 5px;
+    }
+    .expense div:first-child::after {
+        top: 3px;
+        height: 44px;
+    }
+    .expense h2 {
+        font-size: 15px;
+    }
+    .expense div p {
+        font-size: 12px;
+    }
+    .Transactions ul li {
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7px;
+        font-size: 13px;
+    }
+    .Transactions button {
+        left: 9px;
+    }
+    .Transactions h3{
+        margin-left: 25px;
+    }
+    .add {
+        width: 85%;
+    }
+    form div input {
+        height: 20px;
+    }
+    .Transactions h3::after {
+        width: 90%;
+        left: 18px;
+    }
+}
+@media (max-width:375px) {
+    .Transactions button {
+        left: 2px;
+        transform: scaleX(80%);
+    }
+
+}
+@media (max-width:294px) {
+    .Transactions ul li {
+        width: 85%;
+    }
+}
